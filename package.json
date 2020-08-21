@@ -1,6 +1,6 @@
 {
   "name": "two",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-development",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

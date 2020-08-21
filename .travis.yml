@@ -15,6 +15,7 @@ deploy:
   local_dir: build
   on: 
     branch: master
-
+after_success:
+  - npm run semantic-release
 
 

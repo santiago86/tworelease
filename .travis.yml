@@ -5,10 +5,9 @@ cache: npm
 
 before_install:
 install:
-  - yarn
+  - npm install
 script:
-  - yarn test
-  - yarn run build
+  - npm run build
 deploy:
   provider: pages
   skip-cleanup: true

@@ -2,13 +2,21 @@ language: node_js
 node_js:
 -10.15.3
 os: osx
-cache:
-  directories:
-    - node_modules
-script: 
-  - npm run test
-after_success:
-  -npm run semantic-release
+cache: npm
+
+before_install:
+install:
+  - yarn install
+script:
+  - yarn test
+  - yarn run build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on: 
+    branch: master
 
 
 
